@@ -46,13 +46,19 @@ This project implements a **25-bit RISC (Reduced Instruction Set Computer) proce
 
 **Example Instruction:** `MOVI R2 ← 0x41`  
 **Binary Representation:**
+```
+01010  0010  0000  0000  01000001
+│       │      │      │        └──────── Immediate Data (8 bits)
+│       │      │      └───────────────── Source Register 2 (5 bits)
+│       │      └──────────────────────── Source Register 1 (5 bits)
+│       └─────────────────────────────── Destination Register (5 bits)
+└─────────────────────────────────────── Opcode (5 bits)
+```
 
-01010 0010 0000 0000 01000001 
-                    |────────|──── Immediate Data (8 bits)
-               |────|───────────── Source Register 2 (5 bits)
-          |────|────────────────── Source Register 1 (5 bits)
-     |────|─────────────────────── Destination Register (5 bits)
-|────|──────────────────────────── Opcode (5 bits)
+---
+
+## 📅 Submission Date  
+**09/04/2025**
 
 
 
